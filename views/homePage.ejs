@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadAhead</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="outer-container">
+<div class="heading-container">
+    <div class="left"> <h1>ReadAhead🔖</h1></div>
+       <div class="right">
+    <button>About</button>
+    <button>Add Book</button>
+</div>
+</div>
+
+<div class="books-container">
+
+    <% books.forEach((book) => { %>
+        <div class="card">
+            <img src="<%= book.url %>" alt="<%= book.bookName %>">
+            <div class="card-content">
+                <h3><%= book.bookName %></h3>
+                <p><strong>Author:</strong> <%= book.author %></p>
+                <p><strong>Genre:</strong> <%= book.genre %></p>
+            </div>
+        </div>
+
+    <% }) %>
+
+   
+</div>
+<!-- button to view all books -->
+
+
+
+    </div>
+   
+    
+</body>
+</html>
