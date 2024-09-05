@@ -13,8 +13,32 @@
     <div class="left"> <h1>ReadAhead🔖</h1></div>
        <div class="right">
     <button>About</button>
-    <button>Add Book</button>
+    <button class="add-book-button" onclick="showModal()">Add Book</button>
 </div>
+
+</div>
+
+
+
+<!-- Modal for adding a book -->
+<div class="modal" id="bookModal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModal()">&times;</span>
+        <h2>Add New Book</h2>
+        <form action="/addBook" method="POST">
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" name="image" required>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required>
+            <button type="submit">Add Book</button>
+            <button type="button" onclick="hideModal()">Cancel</button>
+        </form>
+
+    </div>
 </div>
 
 <div class="books-container">
@@ -27,18 +51,26 @@
                 <p><strong>Author:</strong> <%= book.author %></p>
                 <p><strong>Genre:</strong> <%= book.genre %></p>
             </div>
-        </div>
+            <form action="/deleteBook/<%= book.id %>" method="POST" style="display:inline;">
+                <button type="submit" class="button delete-button">Delete</button>
+            </form>
+           
+              </div>
 
     <% }) %>
 
    
 </div>
-<!-- button to view all books -->
-
-
-
     </div>
    
-    
+    <script>
+        function showModal() {
+            document.getElementById('bookModal').style.display = 'flex';
+        }
+
+        function hideModal() {
+            document.getElementById('bookModal').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
