@@ -16,31 +16,31 @@ const booksData = [
     },
     {
         id : 3,
-    url : "https://i.ebayimg.com/images/g/ANsAAOSwdMpmnPFx/s-l1200.jpg",
-    bookName: "The Secret Life of the Universe",
-    author : "Nathalie A. Cabrol",
-    genre :"Nonfiction"
+    url : "https://static01.nyt.com/images/2024/06/30/books/best-books-jjksd01sj-flat-slide-2ADW/best-books-jjksd01sj-flat-slide-2ADW-articleLarge.png",
+    bookName: "How to Be Both",
+    author : "Ali Smith",
+    genre :"Drama"
     },
     {
         id : 4,
-    url : "https://i.ebayimg.com/images/g/ANsAAOSwdMpmnPFx/s-l1200.jpg",
-    bookName: "The art of letting go",
-    author : "Nick Trenton",
-     genre :"Nonfiction"
+    url : "https://static01.nyt.com/images/2024/06/30/books/best-books-jjksd01sj-flat-slide-IUCI/best-books-jjksd01sj-flat-slide-IUCI-articleLarge.png",
+    bookName: "Pastoralia",
+    author : "George Saunders",
+     genre :"fiction"
     },
     {
         id : 5,
-    url : "https://i.ebayimg.com/images/g/ANsAAOSwdMpmnPFx/s-l1200.jpg",
-    bookName: "The art of letting go",
-    author : "Nick Trenton",
+    url : "https://static01.nyt.com/images/2024/06/30/books/best-books-stmsh02-flat-slide-E2IM/best-books-stmsh02-flat-slide-E2IM-articleLarge.png",
+    bookName: "We the Animals",
+    author : "Justin Torres",
      genre :"Nonfiction"
     },
     {
         id : 6,
-    url : "https://i.ebayimg.com/images/g/ANsAAOSwdMpmnPFx/s-l1200.jpg",
-    bookName: "The art of letting go",
-    author : "Nick Trenton",
-     genre :"Nonfiction"
+    url : "https://static01.nyt.com/images/2024/06/30/books/books-extra-jjjjs-06-flat-slide-Z8EI/books-extra-jjjjs-06-flat-slide-Z8EI-articleLarge.png",
+    bookName: "The Flamethrowers",
+    author : "Rachel Kushner",
+     genre :"Thriller"
     }
     
 ]

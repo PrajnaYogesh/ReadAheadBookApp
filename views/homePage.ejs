@@ -12,8 +12,8 @@
 <div class="heading-container">
     <div class="left"> <h1>ReadAhead🔖</h1></div>
        <div class="right">
-    <button>About</button>
-    <button class="add-book-button" onclick="showModal()">Add Book</button>
+    <!-- <button class="abt-btn">About</button> -->
+    <button class="add-btn" onclick="showModal()">+</button>
 </div>
 
 </div>
@@ -52,6 +52,7 @@
                 <p><strong>Genre:</strong> <%= book.genre %></p>
             </div>
             <form action="/deleteBook/<%= book.id %>" method="POST" style="display:inline;">
+                
                 <button type="submit" class="button delete-button">Delete</button>
             </form>
            
